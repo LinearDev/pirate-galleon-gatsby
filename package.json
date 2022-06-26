@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -19,6 +19,7 @@
     "font-awesome": "^4.7.0",
     "gatsby": "^4.16.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0"
   }
 }

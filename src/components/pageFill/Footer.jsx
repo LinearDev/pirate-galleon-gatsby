@@ -5,10 +5,12 @@ const Footer = () => {
   return (
     <footer>
         <div className="row align-items-center">
-            <a href="/" className="col-md-8 text-decoration-none footer-logo">
+            <div className='col-md-8'>
+              <a href="/" className="col-md-3 text-decoration-none footer-logo">
                 <img width="30" src={logo} />
                 PIRATE GALLEY
-            </a>
+              </a>
+            </div>
             <div className='col-md-4 footer-dev'>Developed by<a href='https://lineardev.net'>LinearDev</a></div>
         </div>
     </footer>

@@ -134,6 +134,11 @@ footer {
 
 footer a {
     color: #caa566;
+    transition: .5s;
+}
+
+footer a:hover {
+    color: #DCC194;
 }
 
 .footer-logo {
