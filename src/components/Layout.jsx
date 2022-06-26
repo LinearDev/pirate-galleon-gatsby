@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>ПИРАТСКАЯ ГАЛЕРА | Главная</title>
+                <link rel="icon" type="image/x-icon" href={logo}></link>
             </Helmet>
             <div ref={loading} className="overflow_box">
                 <div className="loader">
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
             </div>
             <nav className="navbar navbar-expand-lg">
                 <div id='header-content' className="container-fluid">
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="/">
                         <img className="navbar-brand-logo" src={logo} />PIRATE GALLEY
                     </a>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
