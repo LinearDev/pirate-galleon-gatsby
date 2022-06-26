@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: "Inter", Helvetica, sans-serif;
+    margin: 0%; 
+    padding: 0; 
+}
+
+.navbar {
+    z-index: 10;
+}
+
+.navbar-expand-lg {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(85 52 33);
+}
+
+.navbar-brand-logo {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.navbar-brand {
+    color: #DCC194;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 23px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbarSupportedContent {
+    justify-content: end;
+}
+
+.nav-button {
+    display: block;
+    background-color: #9a653c;
+    color: #DCC194;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 13px;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.nav-button:hover {
+	color:#caa566;
+}
+
+.content-box {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* maybe not need */
+.margin-box {
+    margin-top: 350px;
+    margin-left: 10%;
+}
+
+.box-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 44px;
+    color: #553421;
+}
+
+.box-sublitle {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 25px;
+    color: #754930;
+}
+
+.plate {
+    background:rgb(88 49 25 / 70%);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.plate h3 {
+    text-align: center;
+    margin: 45px 0;
+    font-weight: 600;
+}
+
+.plate p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 25px 65px 25px;
+}
+
+.navbar-toggler {
+    color: #DCC194;
+}
+
+.h1-text {
+    color: #553421;
+    font-family: 'Inter';
+    font-weight: 800;
+    line-height: 77px;
+}
+
+footer {
+    background-color: #4b2b1c;
+    padding: 0 20px;
+}
+
+.galley-footer {
+    color: #DCC194;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.display-cover-box{
+    position: fixed;
+    background: url('../../images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.contact-link {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #553421;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.contact-link:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.contact-link-bold {
+    font-weight: 700;
+}
+
+.plates-heading-text {
+    margin-bottom: 80px;
+}
+
+.plates-heading-text h2 {
+    color: #553421;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.plates-heading-text p {
+    color: #754930;
+    font-size: 20px;
+}
+
+.what-is h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: #50301b;
+}
+
+.what-is p {
+    font-size: 20px;
+    text-indent: 2%;
+    color: #583521;
+}
+
+.overflow_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #4b2b1c;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    position: absolute;
+    width: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.loader img {
+    animation: 4s alternate 0s infinite boat-anim;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boat-anim {
+    from {
+        margin-top: -50px;
+        transform: rotate3d(0, 5, 5, 5deg);
+    }
+    to {
+        margin-top: 25px;
+        transform: rotate3d(0, -5, -2, 5deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .what-is {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .plate {
+        margin-top: 25px;
+    }
+
+    .plate h3 {
+        margin: 25px 0;
+    }
+
+    .plate p {
+        margin-bottom: 25px;
+    }
+
+    .plates-heading-text {
+        margin: 0
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #header-content {
+        justify-content: center;
+    }
+
+    .heading-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .plate-box {
+        margin: 0;
+    }
+
+    .plate p {
+        margin: 0 12px 25px 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        zoom: 0.85;
+    }
+
+    .display-cover-box {
+        height: 120vh;
+    }
+
+    .content-box {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        zoom: 0.75;
+    }
+
+    .display-cover-box {
+        height: 135vh;
+    }
+
+    .content-box {
+        height: 135vh;
+    }
+}
