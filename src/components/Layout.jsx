@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { Helmet } from "react-helmet"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/main.css';
 import logo from '../images/logo.svg'
-import { useEffect } from 'react';
-import { useRef } from 'react';
 
 const Layout = ({ children }) => {
     const loading = useRef();
@@ -13,6 +12,10 @@ const Layout = ({ children }) => {
 
     return (
         <main>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ПИРАТСКАЯ ГАЛЕРА | Главная</title>
+            </Helmet>
             <div ref={loading} className="overflow_box">
                 <div className="loader">
                     <img src={logo} />

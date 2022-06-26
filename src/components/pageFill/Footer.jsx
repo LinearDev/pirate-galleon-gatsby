@@ -3,12 +3,13 @@ import logo from '../../images/logo.svg'
 
 const Footer = () => {
   return (
-    <footer className="d-flex flex-wrap justify-content-between align-items-center py-3">
-        <div className="col-md-4 d-flex align-items-center">
-            <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <img className="bi" width="30" src={logo} />
+    <footer>
+        <div className="row align-items-center">
+            <a href="/" className="col-md-8 text-decoration-none footer-logo">
+                <img width="30" src={logo} />
+                PIRATE GALLEY
             </a>
-            <span className="galley-footer">PIRATE GALLEY</span>
+            <div className='col-md-4 footer-dev'>Developed by<a href='https://lineardev.net'>LinearDev</a></div>
         </div>
     </footer>
   )

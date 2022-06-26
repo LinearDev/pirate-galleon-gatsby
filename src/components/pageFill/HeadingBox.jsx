@@ -11,7 +11,7 @@ const HeadingBox = () => {
                 <div style={{marginBottom: '70px'}} className="box-sublitle">Стань настоящим пиратом</div>
                 <a className='contact-link'>
                     <font className='contact-link-bold'>Telegram -&nbsp;</font>
-                    ПИРАЦКАЯ ГАЛЕРА
+                    ПИРАТСКАЯ ГАЛЕРА
                 </a>
             </div>
         </div>

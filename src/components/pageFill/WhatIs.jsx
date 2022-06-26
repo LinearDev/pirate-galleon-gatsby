@@ -11,7 +11,7 @@ const WhatIs = () => {
                 <p style={{marginBottom: '40px'}}>Приятное комьюнити, веселые и знающие своё дело люди - вот что ждет тебя в ПИРАТСКОЙ ГАЛЕРЕ!</p>
                 <a className='contact-link'>
                     <font className='contact-link-bold'>Telegram -&nbsp;</font>
-                    ПИРАЦКАЯ ГАЛЕРА
+                    ПИРАТСКАЯ ГАЛЕРА
                 </a>
             </div>
         </div>
